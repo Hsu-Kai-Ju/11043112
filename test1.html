@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav a {
+            color: inherit;
+            display: block;
+            font-size: 1.2rem;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: aliceblue;
+            color: #96B6C5;
+        }
+
+        nav ul {
+            list-style: none;
+            background-color: #96B6C5;
+            color:#F1F0E8;
+            margin: 0px;
+            padding: 0;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        body {
+            max-width: 1200px; /* 设置网页的最大宽度为 1200 像素 */
+            margin: 0 auto; /* 居中显示 */
+        }
+
+        h3{
+            background-color:#96B6C5;
+            color: #F1F0E8;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom:5px ;
+            border-radius: 20px;
+        }
+
+        h5{
+            border-left: 3px solid black;
+            padding-left: 5px;
+            font-size: 20px;
+        }
+
+        .fleft{
+            float: left;
+            width: 48%;
+        }
+        .fright{
+            float: right;
+            width: 48%;
+        }
+
+        .fleft ol{
+            border:0px dotted rgb(226, 199, 150);
+        }
+        .fleft li{
+            margin:3px;
+            padding-right: 100px;
+            width:8px;
+            border-right-style: solid;
+            border-right-color: rgb(0, 136, 255);
+            font-size: 20px;
+        }
+        @keyframes bar1{
+            from{border-right-width: 0px;}
+            to{border-right-width:150px}
+        }
+        @keyframes bar2{
+            from{border-right-width: 0px;}
+            to{border-right-width:100px}
+        }
+        @keyframes bar3{
+            from{border-right-width: 0px;}
+            to{border-right-width:50px}
+        }
+        #python{
+            animation:bar1 2s ease;
+            border-right-width: 200px;
+            animation-play-state: running;
+        }
+        #html{
+            animation:bar2 2s ease-out;
+            border-right-width: 150px;
+            animation-play-state: running;
+        }
+        #css{
+            animation:bar3 2s ease-in;
+            border-right-width: 150px;
+            animation-play-state: running;
+        }
+
+        .sc{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .act {
+            width: auto; /* 根据内容自适应宽度 */
+            height: 200px; /* 高度 */
+            display: inline-flex; /* 内容水平排列 */
+            gap: 20px; /* 元素之间的间距 */
+            margin:-10px 20px; /* 外边距 */
+            text-align: center; /* 文字居中对齐 */
+            font-size: 20px; /* 字体大小 */
+            color: #146b9b; /* 文字颜色 */
+        }
+
+        p{
+            margin-top: 20px;
+        }
+        
+        .pie1,.pie2,.pie3,.pie4{
+            width: 100px; /* 寬 */
+            height: 100px; /* 高 */
+            background: pink; /* 背景粉紅色*/
+            border: 3px solid white; /* 邊框 粗3px 實線 白色 */
+            border-radius: 50%; /* 圓角 50% (變成圓形) */
+            box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.1); 
+            background-image:linear-gradient(to right,transparent 50%,#655 0%);
+        }
+
+        .pie1::before {
+            content: "";
+            display: block;
+            margin-left: 50%;
+            height: 100%;
+            border-radius: 0 100% 100% 0 / 50%;
+            background: #655;
+            transform-origin: left;
+            transform: rotate(75deg);
+        }
+        .pie2::before {
+            content: "";
+            display: block;
+            margin-left: 50%;
+            height: 100%;
+            border-radius: 0 100% 100% 0 / 50%;
+            background: #655;
+            transform-origin: left;
+            transform: rotate(30deg);
+        }
+        .pie3::before {
+            content: "";
+            display: block;
+            margin-left: 50%;
+            height: 100%;
+            border-radius: 0 100% 100% 0 / 50%;
+            background: #655;
+            transform-origin: left;
+            transform: rotate(90deg);
+        }
+        .pie4::before {
+            content: "";
+            display: block;
+            margin-left: 50%;
+            height: 100%;
+            border-radius: 0 100% 100% 0 / 50%;
+            background: #655;
+            transform-origin: left;
+            transform: rotate(15deg);
+        }
+
+        .pie1p,.pie2p,.pie3p,.pie4p {
+            width: 80px; /* 寬 */
+            height: 80px; /* 高 */
+            background: #d6ebff; /* 背景淺藍色 */
+            border-radius: 50%; /* 圓角 50% (變成圓形) */
+            position: relative; /* 位置是絕對定位 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            left: 9px;
+            top: -90px;
+        }
+
+        td img{
+            width: auto;
+            height: 150px;
+            transition: filter 0.5s;
+        }
+        td img:hover{
+            filter: blur(5px);
+        }
+        td {
+            position: relative; /* 使td成为定位上下文 */
+        }
+        td:hover::after{
+            content: attr(data-text);
+            position: absolute;
+            z-index: 2;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #F1F0E8;
+        }
+
+        section{
+            clear: both;
+        }
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        
+        
+        
+        
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#About Me">About Me</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#Experiences">Experiences</a></li>
+        </ul>
+    </nav>
+
+    <h3 id="About Me">About Me</h3>
+    <ul>
+        <li>姓名：許凱茹</li>
+        <li>生日：2003/06/16</li>
+        <li>MBTI：INFP</li>
+        <li>興趣：</li>
+        <li>科系：會計系</li>
+        <li>聯絡資訊：</li>
+    </ul>
+
+    <section>
+        <h3 id="Skills">Skills</h3>
+        <div class="sc">
+            <div class="fleft">
+                <h5><b>資訊技能</b></h5>
+                <ol>
+                    <li id="python">python</li>
+                    <li id="html">html</li>
+                    <li id="css">css</li>
+                </ol>
+            </div>
+            <div class="fright">
+                <h5><b>會計技能</b></h5>
+                <div class="act">
+                    <div>
+                        <p>中會</p>
+                        <div class="pie1">
+                          <div class="pie1p">70%</div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>高會</p>
+                        <div class="pie2">
+                          <div class="pie2p">60%</div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>成會</p>
+                        <div class="pie3">
+                          <div class="pie3p">75%</div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>審計</p>
+                        <div class="pie4">
+                          <div class="pie4p">55%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3 id="Education">Education</h3>
+        <table style="margin: 0 auto;">
+            <tr>
+                <td data-text="天母國小"><img src="photo/tm.jpg" alt=""></td>
+                <td data-text="蘭雅國中"><img src="photo/ly.jpg" alt=""></td>
+                <td data-text="陽明高中"><img src="photo/ymsh.jpg" alt=""></td>
+                <td data-text="中原大學"><img src="photo/cycu.jpg" alt=""></td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h3 id="Experiences">Experiences</h3>
+        <h5>學習經歷</h5>
+        
+        <h5>工作經歷</h5>
+    </section>
+</body>
+</html>
