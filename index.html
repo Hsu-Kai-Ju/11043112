@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <p>welcome</p>
+        <p>Everyday is a new day</p>
     </header>
 
     <nav>
@@ -21,19 +21,28 @@
     <main>
         <article>
             <section>
-                <h2 id="About Me">About Me</h2>
-                <ul>
-                    <li>姓名：許凱茹</li>
-                    <li>生日：2003/06/16</li>
-                    <li>MBTI：INFP</li>
-                    <li>興趣：</li>
-                    <li>科系：會計系</li>
-                    <li>聯絡資訊：</li>
-                </ul>
+                <h2 id="About Me" class="am">About Me</h2> <!--個人基本資訊-->
+                <div class="aaa">
+                    <img class="me" src="photo/me.jpg" style="height: 14%; width: 21%;">
+                    <ul>
+                        <li>姓名：許凱茹</li>
+                        <li>生日：2003/06/16</li>
+                        <li>MBTI：INFP</li>
+                        <li>興趣：看電影、小說、聽音樂</li>
+                        <li>科系：會計系</li>
+                        <li >聯絡資訊：
+                            <a href="mailto:cat.j.616@gmail.com"><img src="icon/icon_gmail.png" alt=""></a>
+                            <a href="https://reurl.cc/nNV5kD" target="_blank"><img src="icon/icon_fb.png"></a>
+                            <a href="https://reurl.cc/EjKZEK" target="_blank"><img src="icon/icon_ig.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
             </section>
+
+            <div class="clearfix"></div>
             
             <section>
-                <h2 id="Skills">Skills</h2>
+                <h2 id="Skills">Skills</h2> <!--個人經歷-->
                 <div class="sc">
                     <div class="fleft">
                         <h3><b>資訊技能</b></h3>
@@ -41,6 +50,7 @@
                             <li id="python">python</li>
                             <li id="html">html</li>
                             <li id="css">css</li>
+                            <li id="excel">excel</li>
                         </ol>
                     </div>
                     <div class="fright">
@@ -78,76 +88,105 @@
             <div class="clearfix"></div>
 
             <section>
-                <h2 id="Education">Education</h2>
+                <h2 id="Education">Education</h2> <!--學歷-->
                 <table style="margin: 0 auto;">
-                    <tr>
-                        <td data-text="天母國小"><img src="photo/tm.jpg" alt=""></td>
-                        <td data-text="蘭雅國中"><img src="photo/ly.jpg" alt=""></td>
-                        <td data-text="陽明高中"><img src="photo/ymsh.jpg" alt=""></td>
-                        <td data-text="中原大學"><img src="photo/cycu.jpg" alt=""></td>
+                    <tr class="school">
+                        <td data-text="天母國小"><a href="https://www.tmups.tp.edu.tw" target="_blank"><img src="photo/tm.jpg" alt=""></a></td>
+                        <td data-text="蘭雅國中"><a href="https://www.lyjh.tp.edu.tw/nss/p/index" target="_blank"><img src="photo/ly.jpg" alt=""></a></td>
+                        <td data-text="陽明高中"><a href="https://www.ymsh.tp.edu.tw" target="_blank"><img src="photo/ymsh.jpg" alt=""></a></td>
+                        <td data-text="中原大學"><a href="https://www.cycu.edu.tw" target="_blank"><img src="photo/cycu.jpg" alt=""></a></td>
                     </tr>
                 </table>
             </section>
 
             <section>
-                <h2 id="Experiences">Experiences</h2>
+                <h2 id="Experiences">Experiences</h2> <!--個人經歷-->
                 <h3>學習經歷</h3>
+                <table class="se">
+                    <tr>
+                        <td>
+                            <img src="photo/EY.jpeg" style="width: 250px; height: 150px;">
+                        </td>
+                        <td>
+                            <p>大二：企業參訪（安永聯合會計師事務所）</p>
+                            <p>
+                            剛好系辦有舉辦活動，讓我有機會到安永會計師事務所的台北所參觀，了解未來所面臨的職場狀況及環境，
+                            以及事務所的徵才要求與預期，並聽取學長姐的心路歷程，發現自己要加強及改進的優缺點。
+                            </p>
+                        </td>
+                    </tr>
 
-                <div class="base">
-                    <img src="photo/EY.jpeg" style="width: 250px;height: 150px; margin-left: 1.5%; margin-right: 3%;">
-                    <h5>大二：企業參訪（安永）</h5>
-                    <p>
-                    剛好系辦有舉辦活動，讓我有機會到安永會計師事務所的台北所參觀，了解未來所面臨的職場狀況及環境，
-                    以及事務所的徵才要求與預期，並聽取學長姐的心路歷程，發現自己要加強及改進的優缺點。
-                    </p>
-                </div>
+                    <tr>
+                        <td>
+                            <img src="photo/dragon.png" style="width: 250px; height: 150px;">
+                        </td>
+                        <td>
+                            <p>大三：工藝與生活美學</p>
+                            <p>
+                            這門課有讓我在繁重的讀書生活中能藉由藝術稍作喘息，第一次接觸紙刺繡十分興奮，相較於真實的刺繡簡單許多，
+                            底下還有一張紙做底版，但不失其有趣程度，我一開始就選擇難度中上的龍形圖案，雖然老師沒有強制要我們做完，
+                            我仍舊是在閒暇期間將其完成，完成的瞬間，成就感滿滿。
+                            </p>
+                        </td>
+                    </tr>
 
-                <div class="base">
-                    <h5>大三上：工藝美學</h5>
-                    <p>
-                    這門課有讓我在繁重的讀書生活中能藉由藝術稍作喘息，第一次接觸紙刺繡十分興奮，相較於真實的刺繡簡單許多，
-                    底下還有一張紙做底版，但不失其有趣程度，我一開始就選擇難度中上的龍形圖案，雖然老師沒有強制要我們做完，
-                    我仍舊是在閒暇期間將其完成，完成的瞬間，成就感滿滿。
-                    </p>
-                </div>
+                    <tr>
+                        <td>
+                            <img src="photo/Awarded .jpg" style="width: 180px; height: 250px; margin-left: 30px;" >
+                        </td>
+                        <td>
+                            <p>大三：英文演講比賽</p>
+                            <p>
+                            經過老師推舉有幸參加商學院的英文演講比賽，這對沒有過往經驗的我來說是一個極大的挑戰，在準備比賽的期間，
+                            我會利用每週英文課的課前時間與老師討論準備的狀況，希望把一切都做到最好。沒想到結果出乎我的意料，我居然拿到第四名，
+                            激動的心情難以言諭，這次的比賽給了我很大的信心，即使我得的不是前三名，但也代表我的努力有所結果，未來能夠再向前邁進，
+                            也謝謝老師每週的叮嚀與鼓勵，讓我能夠獲得這個美好的經驗。
+                            </p>
+                        </td>
+                    </tr>
 
-                <div class="base">
-                    <img src="photo/Awarded .jpg" style="width: 150px; height: 200px; margin-left: 8%; margin-right: 8%;">
-                    <h5>大三：英文演講比賽</h5>
-                    <p>
-                    經過老師推舉有幸參加商學院的英文演講比賽，這對沒有過往經驗的我來說是一個極大的挑戰，在準備比賽的期間，
-                    我會利用每週英文課的課前時間與老師討論準備的狀況，希望把一切都做到最好。沒想到結果出乎我的意料，我居然拿到第四名，
-                    激動的心情難以言諭，這次的比賽給了我很大的信心，即使我得的不是前三名，但也代表我的努力有所結果，未來能夠再向前邁進，
-                    也謝謝老師每週的叮嚀與鼓勵，讓我能夠獲得這個美好的經驗。
-                    </p>
-                </div>
-                
+                </table>
+
                 <h3>工作經歷</h3>
 
-                <div class="base">
-                    <h5>大一：建管處公寓大廈科</h5>
-                    <p>
-                    我的工作內容是登記桌的工作，需要將各式文件轉交給各個承辦人，但在此期間帶領我的姊姊有兩次的長期休假，
-                    使我要獨自完成所有工作，一開始很緊張，怕自己做不好，耽誤了其他承辦人的時間，但後來發現，其實並沒有想像中困難，
-                    一步一步將過去學習到的步驟完成，不會就問，做錯了就及時修正，難題迎面而解。
-                    </p>
-                </div>
+                <table class="we">
+                    <tr>
+                        <td>
+                            <img src="photo/trs.jpg" style="border-radius: 50%; width: 160px; height: 160px;">
+                        </td>
 
-                <div class="base">
-                    <h5>大二：士林稅捐稽徵</h5>
-                    <p>
-                    我的工作內容是牌照稅的欠稅清理與過往資料的清冊整理。在整理的過程中，我能從中認識一些關於稅捐方面的知識，
-                    知道承辦人的用意為何。我雖然沒有直接與民眾接洽，而上班時，在與承辦人和民眾的談話裡知曉一些稅務方面的小知識，
-                    也能學習如何與人應對，面對頑固的民眾應該如何解決等⋯⋯。
-                    </p>
-                </div>
+                        <td>
+                            <img src="photo/tccmo.jpg" style="border-radius: 50%; width: 160px; height: 160px;">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p>大二暑假：士林稅捐稽徵</p>
+                            <p>
+                            我的工作內容是牌照稅的欠稅清理與過往資料的清冊整理。在整理的過程中，我能從中認識一些關於稅捐方面的知識，
+                            知道承辦人的用意為何。我雖然沒有直接與民眾接洽，而上班時，在與承辦人和民眾的談話裡知曉一些稅務方面的小知識，
+                            也能學習如何與人應對，面對頑固的民眾應該如何解決等⋯⋯。
+                            </p>
+                        </td>
+
+                        <td>
+                            <p>大一暑假：建管處公寓大廈科</p>
+                            <p>
+                            我的工作內容是登記桌的工作，需要將各式文件轉交給各個承辦人，但在此期間帶領我的姊姊有兩次的長期休假，
+                            使我要獨自完成所有工作，一開始很緊張，怕自己做不好，耽誤了其他承辦人的時間，但後來發現，其實並沒有想像中困難，
+                            一步一步將過去學習到的步驟完成，不會就問，做錯了就及時修正，難題迎面而解。
+                            </p>
+                        </td>
+                    </tr>
+                </table>
 
             </section>
-
         </article>
     </main>
 
     <footer>
+        <a href="#top"><img src="icon/top.png" alt="top"></a>
         <h5>copyright @ 2024 by HKU All right reserved </h5>
     </footer>
 </body>

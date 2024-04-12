@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fleft li {
+            margin: 10px 3px 3px;
+            padding-right: 10px; /* 將 padding-right 設置為 10px */
+            width: 200px; /* 調整進度條的寬度 */
+            border-right-style: solid;
+            border-right-color: rgb(0, 136, 255);
+            font-size: 20px;
+            position: relative; /* 將 li 設置為相對定位，以便絕對定位的文字可以參考 */
+        }
+
+        @keyframes bar1 {
+            from { border-right-width: 0px; }
+            to { border-right-width: 150px; }
+        }
+
+        @keyframes bar2 {
+            from { border-right-width: 0px; }
+            to { border-right-width: 100px; }
+        }
+
+        @keyframes bar3 {
+            from { border-right-width: 0px; }
+            to { border-right-width: 100px; }
+        }
+
+        @keyframes bar4 {
+            from { border-right-width: 0px; }
+            to { border-right-width: 200px; }
+        }
+
+        #python {
+            animation: bar1 2s ease;
+            border-right-width: 150px;
+            animation-play-state: running;
+        }
+
+        #html {
+            animation: bar2 2s ease-out;
+            border-right-width: 100px;
+            animation-play-state: running;
+        }
+
+        #css {
+            animation: bar3 2s ease-in;
+            border-right-width: 100px;
+            animation-play-state: running;
+        }
+
+        #excel {
+            animation: bar4 2s ease-in;
+            border-right-width: 200px;
+            animation-play-state: running;
+        }
+
+        .text {
+            position: absolute;
+            left: 110%; /* 調整文字相對於進度條的位置 */
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 14px;
+            color: #333; /* 調整文字顏色 */
+        }
+    </style>
+</head>
+<body>
+    <ol class="com">
+        <li id="python">
+            python 
+            <span class="percentage">80%</span>
+            <span class="text">Python Programming</span>
+        </li>
+        <li id="html">
+            html 
+            <span class="percentage">70%</span>
+            <span class="text">HTML Coding</span>
+        </li>
+        <li id="css">
+            css 
+            <span class="percentage">60%</span>
+            <span class="text">CSS Styling</span>
+        </li>
+        <li id="excel">
+            excel 
+            <span class="percentage">90%</span>
+            <span class="text">Excel Data Analysis</span>
+        </li>
+    </ol>
+</body>
+</html>
