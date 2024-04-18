@@ -63,7 +63,7 @@ h3 {
 
 footer {
     background-color: #E5E1DA;
-    color: ;
+    color: black;
     text-align: center;
     padding: 10px;
 }
@@ -285,7 +285,6 @@ ul img {
 
 .we img {
     text-align: center;
-    vertical-align: middle;
     display: block;
     margin-left: 30%;
 }
