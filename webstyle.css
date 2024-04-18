@@ -3,9 +3,15 @@
 }
 
 body {
-    background-color: #f9f9f9;
+    background-color:#E5E1DA;
     margin: 0 auto ;
+}
+
+main {
     max-width: 1200px;
+    background-color: #f9f9f9;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header {
@@ -60,14 +66,6 @@ h3 {
     padding-left: 5px;
     margin-left: 20px;
     color: rgb(69, 61, 61);
-}
-
-
-footer {
-    background-color: #E5E1DA;
-    color: black;
-    text-align: center;
-    padding: 10px;
 }
 
 .am {
@@ -294,6 +292,13 @@ ul img {
     height: 160px; 
     border: 5px double rgb(203, 197, 197);
     
+}
+
+footer {
+    background-color: #E5E1DA;
+    color: black;
+    text-align: center;
+    padding: 10px;
 }
 
 footer img {
