@@ -9,9 +9,11 @@ body {
 }
 
 header {
-    background-image: url(background/background\ photo\ 06.jpg);
+    background-image: url(photo/background＿photo.jpg);
     background-size: cover;
-    color: black;
+    color: rgb(203, 197, 197);
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align:center;
     margin: 0px;
     padding: 50px;
@@ -287,6 +289,11 @@ ul img {
     text-align: center;
     display: block;
     margin-left: 30%;
+    border-radius: 50%;
+    width: 160px; 
+    height: 160px; 
+    border: 5px double rgb(203, 197, 197);
+    
 }
 
 footer img {
